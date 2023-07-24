@@ -1,0 +1,52 @@
+I chose to used WA* in this case, the main reason is in the lecture we have been seen the visualized example. And the WA* is the most effient one. (I know it is not always effient than the others, but for now for this case, I believe it can help me finish task nicely)
+
+I calculated the g,h value and add them together to create f value. g is the accumulate cost and the h is the distance that I calculated by using the Manhattan Distance. I tried to use Pythagorean theorem (sqrt(square(x2-x1)+square(y2-y1))) to claculate the disstance as well. I'm willing to see the difference. However, the unreal stuked for some reason. Therefore, the Manhattan distance is the only method that I can use.
+
+Also I has beed experiment with lots of w value(weighted). I cannot record all the data, but I can list an example here.
+For w = 2, which is the final one that I use (it is the best value I can find)
+        CE(Cell Expended)    		PC(Path Cost)
+L1:
+	  	1388					152
+L2:
+		365					146
+L3:
+		3121					669
+L4:
+		11715					1703
+L5:
+		23062					3605
+L6:
+		50411					7452
+L7:
+		82672					14912
+
+For w = 10, which is also shown as the example in the lecture
+L1:
+		1196					174
+L2:
+		216					184
+L3:
+		1696					999
+L4:
+		4398					2249
+L5:
+		14677					4801
+L6:
+		35647					10230
+L7:
+		53158					20368
+
+As you can see, when w = 10, the cell expended will deacrease but the path cost will increase. It can search less node to find the path that may not be that cheap.
+But for the w = 2, the path cost will be less and the CE increased.
+The reason that I used w = 2 is the cell expended is already great(met the requirement in the rubric) but I need to optimize the PC. Thus I used w of 2.
+By implemented this WA* algorithm, it can solve all the levels with a quite good cost in both CE and PC. I tried to improve my PC to met the excellent requirement but cannot figure it out. But the result already every close to that area which is quite good for me.
+I also searched some A* famlity algorithm like implement A* from both side(start side and goal side). And the path is generated when the first node that they reach each other like a bridge.
+However, I don't have enough time to experiment that algorithm.
+Overall, I'm quite happth with the results and the cost is relatively good for me.
+
+For the collision, I don't used specific algorithm. Because I haven't found any useful algorithm online. I coded it by myself. Basically, the search method is same which is WA*. However, the difference is when I assign the neighbours into the open list, I check that neighbour node has an object on it or not also it is not the potential crash node (the node that forced us start replan) Then, I remove those node form the open list which is the ship will not be able to go there. Then implemented the same algorithm. And the result (ratio) is great. Met the excellent requirement.
+
+However, the problem is it can only avoid most collision. If too much ships on the map, the crash will happened. But mostly it can avoid the collision. I cannot improve it for now to avoid all the collisions.
+
+That basiclly all for my doc.
+Thanks
