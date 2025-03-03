@@ -1,4 +1,5 @@
 ## A* Implementation in Unreal(C++)
-Video Demo [here]([https://pages.github.com/](https://www.bilibili.com/video/BV1S69VYhEYw/?vd_source=89c5ffa5922e0c70e56fd0b942972691)).
+Video Demo [here](https://www.bilibili.com/video/BV1S69VYhEYw/?vd_source=89c5ffa5922e0c70e56fd0b942972691).
+https://www.bilibili.com/video/BV1S69VYhEYw/?vd_source=89c5ffa5922e0c70e56fd0b942972691
 ### UML
 ![UML.png](https://github.com/StevenWu111/AStar/blob/c334468b41aa1352c3b964fac5a17069240832b2/UML.png)
